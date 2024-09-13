@@ -5,18 +5,6 @@
     </a>
     <hr>
     <ul class="nav nav-pills flex-column mb-auto">
-      <li class="nav-item">
-        <a href="{% url 'dashboard-index' %}" class="nav-link text-white">
-          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"/></svg>
-          Home
-        </a>
-      </li>
-      <li>
-        <a href="{% url 'dashboard'%}" class="nav-link text-white">
-          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-          Reports
-        </a>
-      </li>
       <li>
         <a href="{% url 'table-data' %}" class="nav-link text-white">
           <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
@@ -24,9 +12,9 @@
         </a>
       </li>
       <li>
-        <a href="{% url 'export-data-charts' %}" class="nav-link text-white">
+        <a href="{% url 'dashboard'%}" class="nav-link text-white">
           <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-          Exports
+          Reports
         </a>
       </li>
     </ul>

@@ -1,6 +1,43 @@
 {% extends 'layouts/base.html'%}
 {% load static %}
 {% block content %}
-   <h2>This is the report page</h2>
+   <h2>Charts - Graphs</h2>
+   <div class="chart-container">
+      <div class="card" style="width: 18rem;">
+         <img src="{% static 'assets/images/tmda_zones.png' %}" alt="TMDA Zones Report" />
+         <div class="card-body">
+            <p class="card-text">This is a graph of ADR reports by TMDA zones</p>
+         </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+         <img src="{% static 'assets/images/region_distribution.png' %}" alt="Region Distribution" />
+         <div class="card-body">
+            <p class="card-text">This is a graph of ADR reports by Regions.</p>
+         </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+         <img src="{% static 'assets/images/map_region.png' %}" alt="Map of ADR Reports by Region" />
+         <div class="card-body">
+            <p class="card-text">This is a graph of ADR reports by Regions in map.</p>
+         </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+         <img src="{% static 'assets/images/region_sex_distribution.png' %}" alt="ADR Reports by Region and Gender" />
+         <div class="card-body">
+            <p class="card-text">This is a graph of ADR reports by Region and Sex Distribution.</p>
+         </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+         <img src="{% static 'assets/images/sex_data_new.png' %}" alt="Gender Distribution of ADR Reports" />
+         <div class="card-body">
+            <p class="card-text">Gender Distribution of ADR Reports.</p>
+         </div>
+      </div>
+   </div>
+
 {% endblock content %}
 

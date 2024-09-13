@@ -1,6 +1,28 @@
 {% extends 'layouts/base.html'%}
 {% load static %}
 {% block content %}
-   <h2>This is the tables page.</h2>
+   <div class="dataTable-container">
+      <table id="myTable">
+         <thead>
+            <tr>
+               <th>Sex</th>
+               <th>Reporter_state_or_province</th>
+               <th>Date_of_report</th>
+               <th>Created_by_organisation_level_2</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in data %}
+            <tr>
+               <td>{{ item.Sex }}</td>
+               <td>{{ item.Reporter_state_or_province }}</td>
+               <td>{{ item.Date_of_report }}</td>
+               <td>{{ item.Created_by_organisation_level_2 }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+      </table>
+   </div>
+
 {% endblock content %}
 
